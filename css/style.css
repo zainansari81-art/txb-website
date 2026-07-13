@@ -202,6 +202,13 @@ a.chip:hover { border-color: var(--gold-line); color: var(--gold); }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
 
 /* ---------- Video embeds ---------- */
+.cat-group + .cat-group { margin-top: 56px; }
+.cat-head { display: flex; align-items: center; gap: 14px; margin: 0 0 24px; }
+.cat-head .lbl {
+  font-size: 12px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.16em; color: var(--gold); white-space: nowrap;
+}
+.cat-head .line { flex: 1; height: 1px; background: var(--line); }
 .video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
 .video-embed {
   position: relative; width: 100%; aspect-ratio: 16 / 9;
